@@ -3,6 +3,8 @@
   [placeholder]="placeholder"
   class="form-control"
   (keyup.enter)="emitValue(txtSearchInput.value)"
+  (keyup)="onkeyPress(txtSearchInput.value)"
+  [value]="initialValue"
   #txtSearchInput
 
 >
